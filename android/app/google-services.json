@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "398512212810",
+    "firebase_url": "https://login-e5f9b-default-rtdb.firebaseio.com",
+    "project_id": "login-e5f9b",
+    "storage_bucket": "login-e5f9b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398512212810:android:5371482c32f64e42ad0fb3",
+        "android_client_info": {
+          "package_name": "com.livechat.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398512212810-p1hc9df76r3qqn8nl3sis72a5vq8gn8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD23vGlWliK2c71j0cJk0fxZqfbQet_bkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398512212810-p1hc9df76r3qqn8nl3sis72a5vq8gn8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398512212810:android:d38cd144058f1eccad0fb3",
+        "android_client_info": {
+          "package_name": "com.rafsanZ.ST"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398512212810-p1hc9df76r3qqn8nl3sis72a5vq8gn8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD23vGlWliK2c71j0cJk0fxZqfbQet_bkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398512212810-p1hc9df76r3qqn8nl3sis72a5vq8gn8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
