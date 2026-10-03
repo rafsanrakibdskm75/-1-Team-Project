@@ -213,10 +213,9 @@ git push origin your-branch-name
 
 ## 🤝 Contributors / অবদানকারীগণ
 
-| Md Nahidul Islam | 👑 Main Owner / Team Lead |  |
-| rafsanrakibdskm75 | 💻 Team Member | [rafsanrakibdskm75](https://github.com/rafsanrakibdskm75) |
-|  |  |  |
-
+| Contributor | Role | GitHub |
+|---|---|---|
+| **rafsanrakibdskm75** |  👑 Main Owner / Team Lead | [@rafsanrakibdskm75](https://github.com/rafsanrakibdskm75) |
 > Add every team member above / উপরে প্রতিটি টিম মেম্বারকে যোগ করুন।
 
 ---
