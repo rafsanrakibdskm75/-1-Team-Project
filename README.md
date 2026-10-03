@@ -1,17 +1,17 @@
-<<<<<<< HEAD
-# -1-Team-Project
-#1 Team Project
-=======
+<div align="center">
+
 # 💬 Live Chat
+
+### Project #1 — Team Project
 
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 [![X Follow](https://img.shields.io/twitter/follow/iamjideguru?style=social)](https://x.com/iamjideguru)
 
+**A real-time chat application built with Flutter and Firebase**
+
 ![Live Chat Banner](banner.webp)
 
-### Project #1 — Team Project
-
-A real-time chat application built with **Flutter** and **Firebase**.
+</div>
 
 ---
 
@@ -249,4 +249,3 @@ git push origin your-branch-name
 
 ⭐ If you like this project, give it a star!
 ⭐ প্রজেক্টটি ভালো লাগলে একটি স্টার দিন!
->>>>>>> 4670547 (First Commit)
