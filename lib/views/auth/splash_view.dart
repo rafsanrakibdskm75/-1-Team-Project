@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:live_chating/theme/app_theme.dart';
 
 import '../../routes/app_routes.dart';
 
@@ -65,8 +66,57 @@ class _SplashViewState extends State<SplashView> with SingleTickerProviderStateM
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppTheme.primaryColor,
       body: Center(
-        child: CircularProgressIndicator(),
+        child: AnimatedBuilder(animation: _animationController,
+        builder: (context, child){
+          return FadeTransition(opacity: _fadeAnimation,
+          child: ScaleTransition(scale: _scaleAnimation,
+          child: Column( 
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [Container(
+              width: 120,
+              height: 120,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(30),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.1),
+                    blurRadius: 20,
+                    offset: Offset(0, 10),
+                  ),
+                ],
+              ),
+              child: Icon(Icons.chat_bubble_rounded,
+               size: 60, 
+               color: AppTheme.primaryColor),
+            ),
+            SizedBox(height: 32),
+            Text('Live Chatting App',
+            style:Theme.of(context).textTheme.headlineLarge?.copyWith(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(height: 32),
+          Text('Welcome to Live Chatting App',
+            style:Theme.of(context).textTheme.bodyMedium?.copyWith(
+              color: Colors.white,
+            ),
+          ),
+          SizedBox(height: 64),
+          CircularProgressIndicator(
+            color: Colors.white,
+            strokeWidth: 2,
+          ),
+          ],
+          ),
+          ),
+          );
+        },
+        ),
+        
       ),
     );
   }
