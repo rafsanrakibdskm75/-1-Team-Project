@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:live_chating/controllers/auth_controller.dart';
 import 'package:live_chating/theme/app_theme.dart';
 
 import '../../routes/app_routes.dart';
@@ -37,23 +38,23 @@ class _SplashViewState extends State<SplashView> with SingleTickerProviderStateM
 
       _animationController.forward();
 
-      // _checkAuthabdNavigate();
+      _checkAuthabdNavigate();
       
   }
 
-  // void _checkAuthabdNavigate()async{
-  //   await Future.delayed(Duration(seconds: 2));
+  void _checkAuthabdNavigate()async{
+    await Future.delayed(Duration(seconds: 2));
 
-  //   final authController = Get.put(AuthController(),permanent: true);
-  //   await Future.delayed(Duration(milliseconds: 500));
+    final authController = Get.put(AuthController(),permanent: true);
+    await Future.delayed(Duration(milliseconds: 500));
 
-  //   if(authController.isAuthenticated){
-  //     Get.offAllNamed(AppRoutes.main);
+    if(authController.isAuthenticated){
+      Get.offAllNamed(AppRoutes.main);
       
-  //   }else{
-  //     Get.offAllNamed(AppRoutes.login);
-  //   }
-  // }
+    }else{
+      Get.offAllNamed(AppRoutes.login);
+    }
+  }
 
   @override
   void dispose() {

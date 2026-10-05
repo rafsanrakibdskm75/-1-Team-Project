@@ -20,6 +20,7 @@ class AuthService {
     String password,
   ) async {
     try{
+      print('Attempting to sign in user with email: $email');
       UserCredential result = await _auth.signInWithEmailAndPassword(
         email: email,
         password: password,
@@ -29,9 +30,10 @@ class AuthService {
         await _firestoreService.updateUserOnlineStatus(user.uid, true);
         return await _firestoreService.getUser(user.uid);
       } return null;
-        }catch (e) {
-          throw Exception('Failed to sign in: $e');
-        };
+    } catch (e) {
+      print('Error during sign in: $e');
+      throw Exception('Failed to sign in: $e');
+    }
   }
 
   Future<UserModel?> registerWithEmailAndPassword(
@@ -40,6 +42,7 @@ class AuthService {
     String displayName,
   ) async {
     try{
+      print('Attempting to register user with email: $email');
       UserCredential result = await _auth.createUserWithEmailAndPassword(
         email: email,
         password: password,
@@ -61,13 +64,15 @@ class AuthService {
         await _firestoreService.createUser(userModel);
         return userModel;
       } return null;
-        }catch (e) {
-          throw Exception('Failed to register: $e');
-        };
+    } catch (e) {
+      print('Error during registration: $e');
+      throw Exception('Failed to register: $e');
+    }
   }
 
   Future<void> sendPasswordResetEmail(String email) async {
     try {
+      print('Sending password reset email to: $email');
       await _auth.sendPasswordResetEmail(email: email);
     } catch (e) {
       throw Exception('Failed to send password reset email: $e');
@@ -76,6 +81,7 @@ class AuthService {
 
   Future<void> signOut() async {
     try {
+      print('Signing out user: $currentUserId');
       if (currentUser != null) {
         await _firestoreService.updateUserOnlineStatus(currentUserId!, false);
       }
@@ -87,6 +93,7 @@ class AuthService {
 
   Future<void> deleteAccount() async {
     try {
+      print('Attempting to delete account for user: $currentUserId');
       if (currentUser != null) {
         await _firestoreService.updateUserOnlineStatus(currentUserId!, false);
         await _firestoreService.deleteUser(currentUserId!);

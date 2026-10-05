@@ -5,10 +5,13 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/widgets.dart';
 import 'package:live_chating/routes/app_pages.dart';
 import 'package:live_chating/theme/app_theme.dart';
+import 'package:get/get_navigation/get_navigation.dart';
+import 'package:live_chating/services/auth_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  Get.put(AuthService());
   runApp((MyApp()));
 }
 

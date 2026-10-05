@@ -7,8 +7,8 @@ class AppTheme {
   static const Color accentColor = Color(0xFFFF7675);
   static const Color backgroundColor = Color(0xFF8F9Fa);
   static const Color cardColor = Color(0xFFFFFFFF);
-  static const Color testPrimaryColor = Color(0xFF2D3436);
-  static const Color testSecondaryColor = Color(0xFF6336E72);
+  static const Color textPrimaryColor = Color(0xFF2D3436);
+  static const Color textSecondaryColor = Color(0xFF6336E72);
   static const Color borderColor = Color(0xFFDDD6FE);
   static const Color errorColor = Color(0xFFE17055);
   static const Color successColor = Color(0xFF00B894);
@@ -23,8 +23,8 @@ class AppTheme {
       error: errorColor,
       onPrimary: Colors.white,
       onSecondary: Colors.white,
-      onBackground: testPrimaryColor,
-      onSurface: testPrimaryColor,
+      onBackground: textPrimaryColor,
+      onSurface: textPrimaryColor,
       onError: Colors.white,
     ),
 
@@ -32,32 +32,32 @@ class AppTheme {
       headlineLarge: GoogleFonts.poppins(
         fontSize: 32,
         fontWeight: FontWeight.bold,
-        color: testPrimaryColor,
+        color: textPrimaryColor,
       ),
       headlineMedium: GoogleFonts.poppins(
         fontSize: 24,
         fontWeight: FontWeight.w600,
-        color: testPrimaryColor,
+        color: textPrimaryColor,
       ),
       headlineSmall: GoogleFonts.poppins(
         fontSize: 20,
         fontWeight: FontWeight.w500,
-        color: testPrimaryColor,
+        color: textPrimaryColor,
       ),
       bodyLarge: GoogleFonts.poppins(
         fontSize: 16,
         fontWeight: FontWeight.normal,
-        color: testPrimaryColor,
+        color: textPrimaryColor,
       ),
       bodyMedium: GoogleFonts.poppins(
         fontSize: 14,
         fontWeight: FontWeight.normal,
-        color: testPrimaryColor,
+        color: textPrimaryColor,
       ),
       bodySmall: GoogleFonts.poppins(
         fontSize: 12,
         fontWeight: FontWeight.normal,
-        color: testSecondaryColor,
+        color: textSecondaryColor,
       ),
     ),
     
@@ -68,10 +68,10 @@ class AppTheme {
       titleTextStyle: TextStyle(
         fontSize: 18,
         fontWeight: FontWeight.w600,
-        color: testPrimaryColor,
+        color: textPrimaryColor,
       ),
       iconTheme: IconThemeData(
-        color: testPrimaryColor,
+        color: textPrimaryColor,
       ),
     ),
 

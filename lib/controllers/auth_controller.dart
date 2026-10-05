@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'package:live_chating/models/user_model.dart';
-import 'package:live_chating/services/auth_Service.dart';
+import 'package:live_chating/services/auth_service.dart';
 
 import '../routes/app_routes.dart';
 
@@ -27,12 +27,12 @@ class AuthController extends GetxController {
   }
   void _handleAuthStateChanged(User? user) async {
     if (user != null) {
-       if (Get.currentRoute != AppRoutes.login){
-        Get.offAllNamed(AppRoutes.login);
+       if (Get.currentRoute != AppRoutes.main){
+        Get.offAllNamed(AppRoutes.main);
        }
     }else {
-      if (Get.currentRoute != AppRoutes.main){
-        Get.offAllNamed(AppRoutes.main);
+      if (Get.currentRoute != AppRoutes.login){
+        Get.offAllNamed(AppRoutes.login);
       }
     }
     if (!_isinitialized.value) {

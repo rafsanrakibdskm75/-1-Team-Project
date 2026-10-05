@@ -2,6 +2,8 @@ import 'package:get/get_navigation/get_navigation.dart';
 import 'package:get/get.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:live_chating/routes/app_routes.dart';
+import 'package:live_chating/views/auth/login_view.dart';
+import 'package:live_chating/views/auth/register_view.dart';
 import 'package:live_chating/views/auth/splash_view.dart';
 
 class AppPages {
@@ -9,9 +11,8 @@ class AppPages {
 
   static final routes = [
     GetPage(name: AppRoutes.splash, page: () => const SplashView()),
-    // GetPage(name: AppRoutes.login, page: () => const LoginView()),
-    // GetPage(name: AppRoutes.register, page: () => const RegisterView())
-    // ),
+    GetPage(name: AppRoutes.login, page: () => const LoginView()),
+    GetPage(name: AppRoutes.register, page: () => const RegisterView()),
     // GetPage(name: AppRoutes.forgetpassword, page: () => const ForgetPasswordView())
     // binding: BindingsBuilder(() {
     //   Get.put(ForgetPasswordController());
@@ -22,8 +23,7 @@ class AppPages {
     //   Get.put(ChangePasswordController());
     // })
     // ),
-   
-   
+
     // GetPage(name: AppRoutes.home, page: () => const HomeView())
     // binding: BindingsBuilder(() {
     //   Get.put(HomeController());
@@ -49,26 +49,25 @@ class AppPages {
     //   Get.put(UsersListController());
     // })
     // ),
-    
+
     // GetPage(name: AppRoutes.friends, page: () => const FriendsView())
     // binding: BindingsBuilder(() {
     //   Get.put(FriendsController());
     // })
     // ),
-    
-    // GetPage(name: AppRoutes.friendRequests, 
+
+    // GetPage(name: AppRoutes.friendRequests,
     // page: () => const FriendRequestsView()
     // binding: BindingsBuilder(() {
     //   Get.put(FriendRequestsController());
     // })
     // ),
 
-    // GetPage(name: AppRoutes.notifications, 
+    // GetPage(name: AppRoutes.notifications,
     // page: () => const NotificationsView()
     // binding: BindingsBuilder(() {
     //   Get.put(NotificationsController());
     // })
     // ),
   ];
-    
 }
